@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techy Software</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    header {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .portfolio-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .portfolio-images img {
+      max-width: 100%;
+      margin: 10px;
+    }
+    .feedback-form {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .feedback-form input[type="text"],
+    .feedback-form input[type="email"],
+    .feedback-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .feedback-form input[type="submit"] {
+      background-color: #4e54c8;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Techy Software</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>About Techy Software</h2>
+    <p>Techy Software is a leading software development company specializing in innovative solutions for businesses of all sizes.</p>
+    <h2>Our Products</h2>
+    <p>Explore our wide range of software products designed to streamline your operations and boost productivity.</p>
+    <h2>Our Services</h2>
+    <p>We offer a variety of services including custom software development, web application development, and mobile app development.</p>
+  </section>
+  <footer>
+    <h2>Feedback Form</h2>
+    <form action="/feedback" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="feedback">Feedback:</label><br>
+      <textarea id="feedback" name="feedback"></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+  </footer>
+</body>
+</html>
